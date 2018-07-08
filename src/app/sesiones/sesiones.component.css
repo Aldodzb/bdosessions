@@ -1,0 +1,14 @@
+#holder {
+    background-color: rgb(2, 2, 27);
+    height: 100vh;
+}
+
+#content {
+    margin: 10% 10% 0 10%;
+    position: absolute;
+}
+
+#session-table {
+    margin-top:15px;
+    width: 80vw;
+}

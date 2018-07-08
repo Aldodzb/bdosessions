@@ -1,0 +1,58 @@
+<div id="holder">
+    <div id="content">
+      <div id="formulario" style="color:white"> 
+
+        <div *ngFor= "let movs of placesUrls" style="display: block">
+          <div [ngStyle]="{'background-image': 'url(../assets/' + movs.url + ')'}"   class="placesDisplay" (click)="showContent($event)" (mouseenter)="showCross($event)" (mouseleave)="hideCross($event)"> 
+      
+            <div style="margin: 0; color:white;
+            position: absolute;
+            top: 27%;
+            left: 20%;
+            width:60%;
+            vertical-align: middle; overflow: hidden;
+            text-align: center;
+            vertical-align: middle;font-size: 25px"><b style="text-shadow: 2px 2px #000000;">{{movs.nombre}}</b></div>
+        </div>
+      </div>
+      <br><br><br>
+
+      <div id="placeContent" style="display: none; clear:left; padding-top:50px;" >
+
+        <table>
+          <tr>
+              <td>
+                <div class="item-place" style="background-color: red; padding: 15px;">
+                  <div style="margin: 0 0 5px 0"><img class="icon-item" src="../../assets/placeholder-image.jpg"></div>
+                  <input class="item-qty" type="number">
+                </div>
+              </td>
+              <td>
+                <div class="item-place" style="background-color: red; padding: 15px;">
+                  <div style="margin: 0 0 5px 0"><img class="icon-item" src="../../assets/placeholder-image.jpg"></div>
+                  <input class="item-qty" type="number">
+                </div>
+              </td>
+              <td>
+                <div class="item-place" style="background-color: red; padding: 15px;">
+                  <div style="margin: 0 0 5px 0"><img class="icon-item" src="../../assets/placeholder-image.jpg"></div>
+                  <input class="item-qty" type="number">
+                </div>
+              </td>
+              <td>
+                <div class="item-place" style="background-color: red; padding: 15px;">
+                  <div style="margin: 0 0 5px 0"><img class="icon-item" src="../../assets/placeholder-image.jpg"></div>
+                  <input class="item-qty" type="number">
+                </div>
+              </td>
+            
+            
+          </tr>
+          
+        </table>
+      </div>
+      <br> <br>
+      <button class="btn btn-primary">Ingresar Sesión</button>
+      
+    </div>
+</div>

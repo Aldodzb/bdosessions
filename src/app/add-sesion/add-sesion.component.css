@@ -1,0 +1,51 @@
+#holder {
+    background-color: rgb(2, 2, 27);
+    height: 100vh;
+}
+
+#content {
+    margin: 10% 10% 0 10%;
+    background-color: rgb(70, 70, 70);
+    width: 80vw;
+    position: absolute;
+}
+
+#formulario {
+    padding: 20px 10% 0 10%;
+    position: relative;
+}
+
+.placesDisplay{
+    border-radius       : 6px; 
+    width               : 300px;  
+    background-repeat   : no-repeat; 
+    background-position : center center; 
+    background-size     : cover; 
+    height              : 80px; 
+    position            :relative; 
+    float               : left; 
+    margin-left         : 10px; 
+    margin-top          : 10px; 
+    overflow            : hidden;
+    filter              : brightness(70%);
+    transition          : 0.5s;
+    cursor              : pointer; 
+}
+
+.item-place{
+    display: table-cell; vertical-align: middle; 
+}
+
+.item-qty{
+    display:block;
+    margin:auto;
+    text-align:center;
+    width:80px;
+}
+
+.icon-item{
+    height:40px;
+    width: 60px;
+    display:block;
+    margin:auto;
+}
